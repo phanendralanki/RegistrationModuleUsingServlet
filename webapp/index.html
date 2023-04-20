@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registration using Servlet</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                margin: 0;
+            }
+
+            .container {
+                height: 100vh;
+                width: 100vw;
+                /* border: 2px solid red; */
+            }
+
+            .form {
+                width: 50%;
+                margin: auto;
+            }
+
+            input,
+            button {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 8px;
+                margin-top: 8px;
+                font-size: 14px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                display: block;
+                
+            	width:300px;
+            }
+
+            .form-heading {
+                font-size: 28px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;            
+            }
+
+            .button {
+                background-color: #03cafc;
+                color: black;
+                width:320px;
+                cursor: pointer;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form">
+                <p class="form-heading">Register Here</p>
+                <form action="RegisterServlet" method="post">
+                <input type="text" name="name" id="" placeholder="User Name" class="user-name" />
+                <input type="email" name="email" id="" placeholder="Email" class="email" />
+                <input type="text" name="mobile" id="" placeholder="mobile number" class="phone" />
+                <input type="password" name="password" id="" placeholder="Password" class="password" />
+                <button type="submit" class="button">submit</button>
+            </form>
+
+            </div>
+        </div>
+    </body>
+</html>
